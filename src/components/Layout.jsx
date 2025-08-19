@@ -30,7 +30,7 @@ const Layout = () => {
             <Navbar bg="light" expand="lg" fixed="top" className="mb-4 shadow-sm">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
-                        <img src="/public/images/logo_dark.png" alt="Logo" width="120" height="40" className="d-inline-block align-top" />{' '}
+                        <img src="/images/logo_dark.png" alt="Logo" width="120" height="40" className="d-inline-block align-top" />{' '}
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
