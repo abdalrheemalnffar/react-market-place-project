@@ -1,0 +1,212 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 100%;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  padding-top: 0px;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+} */
+.hover-zoom:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+.hero-section {
+  background-image: url('/public/images/hero2.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(19, 2, 2);
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+/* CSS لضبط أبعاد الصور في الأقسام */
+.category-image {
+  width: 100%;            /* يجعل الصورة تأخذ عرض العنصر الأم */
+  height: 200px;          /* تحديد الارتفاع الثابت */
+  object-fit: cover;      /* يضمن أن الصورة تغطي المساحة المحددة */
+}
+/* CSS لتنسيق الروابط في الفوتر */
+.footer-link {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.feature-box {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.feature-icon {
+  width: 40px;
+  height: 40px;
+}
+/* src/components/HeroSlider.css */
+.heroSwiper {
+  width: 100%;
+  height: 85vh !important;
+}
+  /* slider */
+.slide-item {
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 12px;
+}
+.hero-slide {
+  min-height: 500px;
+  padding: 60px 0;
+  color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slide h2,
+.hero-slide p {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+/* nav */
+.nav-hover {
+  position: relative;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-hover::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 50%;
+  background-color: #ff2323; /* لون الخط */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.nav-hover:hover {
+  color: #ff2323; /* نفس لون الخط أو مختلف */
+}
+
+.nav-hover:hover::after {
+  width: 100%;
+}
+.fade-dropdown .dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: block !important; 
+  visibility: hidden;
+}
+
+.fade-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  color: #ff2323 !important;
+  transform: translateY(0);
+  visibility: visible;
+}
+.cart-hover {
+  transition: color 0.3s ease;
+}
+
+.cart-hover:hover {
+  color: #ff2323; /* لون أحمر مثل لون الشارة أو أي لون تحبه */
+}
+
+
+
+
+
